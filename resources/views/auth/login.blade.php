@@ -45,10 +45,10 @@
                     </a>
                 @endif
             </div>
-            <div class="mg-t-10">Not yet a member? <a href="" class="tx-info">Sign Up</a></div>
+            <div class="mg-t-10">Not yet a member? <a href="{{ route('register') }}" class="tx-info">Sign Up</a></div>
         </form>
       </div><!-- login-wrapper -->
     </div><!-- overlay-body -->
   </div><!-- d-flex -->
 
-@endsection
+@endsection()
