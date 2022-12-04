@@ -16,103 +16,25 @@
           </a><!-- br-menu-link -->
         </li><!-- br-menu-item -->
         <label class="sidebar-label pd-x-10 mg-t-25 mg-b-20 tx-info">Admin</label>
-        <!-------------------------- Seller -------------------------->
+       <!--------------Frontend----------->
         <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Seller</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage Seller</a></li>  
-            <li class="sub-item"><a href="" class="sub-link">Add Seller</a></li>              
-          </ul>
-        </li>
-        <!-------------------------- Category -------------------------->
+            <a href="{{ url('/') }}" class="br-menu-link" target="_blank">
+                <i class="menu-item-icon icon ion-help-buoy tx-22"></i>
+                <span class="menu-item-label">Live Visit</span>
+            </a><!-- br-menu-link -->
+        </li><!-- br-menu-item -->
+        <!-------------Logout------------------>
         <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Category</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage Category</a></li>  
-            <li class="sub-item"><a href="" class="sub-link">Add Category</a></li>              
-          </ul>
-        </li>
-        <!-------------------------- Sub Category -------------------------->
-        <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Sub Category</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage Sub-Category</a></li>  
-            <li class="sub-item"><a href="" class="sub-link">Add Sub-Category</a></li>              
-          </ul>
-        </li>
-        <!-------------------------- product -------------------------->
-        <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Product</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage Product</a></li>  
-            <li class="sub-item"><a href="" class="sub-link">Add Product</a></li>              
-          </ul>
-        </li>
-        <!-------------------------- Slider -------------------------->
-        <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Slider</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage Slider</a></li>  
-            <li class="sub-item"><a href="" class="sub-link">Add Slider</a></li>              
-          </ul>
-        </li>
-        <!-------------------------- Coupon -------------------------->
-        <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Coupon</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage Coupon</a></li>  
-            <li class="sub-item"><a href="" class="sub-link">Add Coupon</a></li>              
-          </ul>
-        </li>
-        <!-------------------------- Review -------------------------->
-        <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Review</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage Review</a></li>           
-          </ul>
-        </li>
-        <!-------------------------- Comments -------------------------->
-        <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Comments</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Manage comments</a></li>           
-          </ul>
-        </li>
-        <!-------------------------- Message -------------------------->
-        <li class="br-menu-item">
-          <a href="#" class="br-menu-link with-sub">
-            <i class="menu-item-icon icon ion-ios-photos-outline tx-20"></i>
-            <span class="menu-item-label">Message</span>
-          </a><!-- br-menu-link -->
-          <ul class="br-menu-sub">
-            <li class="sub-item"><a href="" class="sub-link">Massage</a></li>           
-          </ul>
-        </li>
-        
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                this.closest('form').submit();"class="br-menu-link">
+                    <i class="menu-item-icon icon ion-power tx-22 text-danger"></i>
+                    <span class="menu-item-label">Logout</span>
+                </a><!-- br-menu-link -->
+            </form>
+        </li><!-- br-menu-item -->
+
       <br>
     </div><!-- br-sideleft -->
     <!-- ########## END: LEFT PANEL ########## -->
